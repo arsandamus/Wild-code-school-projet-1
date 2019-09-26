@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>John Ryan | Voyage en Amérique</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+</head>
+
+<body>
+    <header>
+
+        <audio id="audioPlayer" autoplay>
+                <source src="Halloween.mp3">
+                <source src="Halloween.ogg">F
+            </audio>
+
+        <span class="volume">
+                    <a class="stick1" onclick="volume('audioPlayer', 0)"></a>
+                    <a class="stick2" onclick="volume('audioPlayer', 0.3)"></a>
+                    <a class="stick3" onclick="volume('audioPlayer', 0.5)"></a>
+                    <a class="stick4" onclick="volume('audioPlayer', 0.7)"></a>
+                    <a class="stick5" onclick="volume('audioPlayer', 1)"></a>
+            </span>
+
+        <button id="play" class="control" onclick="play('audioPlayer', this)">Play</button>
+        <button id="stop" class="control" onclick="resume('audioPlayer')">Stop</button>
+
+        <div class="navbar">
+
+            <a href="index.html"><img id="jr" src="logoJR2.svg" alt="Logo du photographe"></a>
+
+            <nav>
+                <ul>
+                    <li class="menu"><a href="#">About me</a></li>
+                    <li class="menu"><a href="#">Destinations</a>
+                        <ul id="hidden">
+                            <li><a href="America.html">Amérique</a></li>
+                            <li><a href="#">Asie</a></li>
+                            <li><a href="#">Europe</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu"><a href="#">Contact me</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <ul id="réseaux">
+            <li><a href="#" target="blank"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#" target="blank"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#" target="blank"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#" target="blank"><i class="fab fa-linkedin-in"></i></a></li>
+        </ul>
+
+    </header>
+
+    <div id="slider">
+
+        <figure id="figure">
+
+            <div id="one">
+
+                <a href="America.html"><img id="image1" src="purge.jpg" alt="burger américain"></a>
+
+            </div>
+
+            <div id="two">
+
+                <a href="gallerieAsie.html"><img id="image2" class="slide" src="grudge.jpg" alt="2 bouddhistes"></a>
+
+            </div>
+
+
+            <div id="three">
+
+                <a href="galleriEurope.html"><img id="image3" class="slide" src="jack.png" alt="drapeau européen sur un bâtiment"></a>
+
+            </div>
+
+
+            <div id="four">
+
+                <a href="America.html"><img id="image4" class="slide" src="purge.jpg" alt="burger américain"></a>
+
+            </div>
+
+        </figure>
+
+    </div>
+
+    <section id="block2">
+
+        <div id="imageBio">
+
+            <img id="Ryan" src="JohnRyan.png" alt="Photo de John Ryan">
+
+        </div>
+
+        <div id="bio">
+
+            <p>Né en 1984 à Saint-Pardoux-la-Rivière, dans le Périguord, je suis passionné par le paranormal, la photographie, les enquêtes au-delà du réel et l'élevage de moutons. Mon métier fait de moi un faiseur d'images de l'étrange et de l'insolite.
+                Durant mes nombreuses années d'activité, j'ai pu voir de nombreuses choses qui ont remis en question ma vision de la vie. J'ai vu des navires de guerre en feu surgissant de l'épaule d'Orion et des rayons C briller dans l'obscurité près
+                de la porte de Tanhauser. Grace à mon appareil photo, ces moments ne disparaitront pas, tels des larmes dans la pluie.
+                <br /><br /> J'ai commencé mon activité de photographe à 10 ans, après la disparition de mes parents lors de la visite d'un parc d'attraction abandonné. Depuis, je me suis juré de les retrouver. Chaque enquête me mène un peu plus vers
+                eux, chaque endroit est une nouvelle marche vers la rédemption. Si je devais me résumer en quelques mots, je dirai que je suis un Citizen Kane à la recherche de son Rosebud.
+                <br /><br /> Motivé par mon désir de trouver mes parents disparus, je n'hésite pas à aider les autres orphelins dont la famille aurait aussi disparu dans des conditions paranormales. N'hésitez donc pas à me contacter via la page du même
+                nom. Car, qui sait, peut être le chemin qui me menera à la salvation croise le sentier de votre vie.
+                <br /><br /> Big bisous
+                <br /><br />
+                <span class="espace">John Ryan</span>
+            </p>
+
+        </div>
+
+    </section>
+
+    <footer>
+        <img class="sheep-logo" src="mouton.png" alt="logo sheep investigation">
+        <a href="#" class="top"> ^ </a>
+        <p class="copyright">
+            &#169; Copyright 2019 Sheep Investigation - All Rights Reserved
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

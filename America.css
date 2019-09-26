@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url(https://images7.alphacoders.com/382/382041.jpg);
+    background-position: center;
+    width: 100%;
+    background-size: cover;
+}
+
+header {
+    color: white;
+    background-color: black;
+    height: 150px;
+}
+
+#jr {
+    height: 134%;
+    width: 112%;
+    margin-top: 20px;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    height: 97px;
+}
+
+nav {
+    position: sticky;
+    width: 100%;
+    background-color: black;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 5px 0px 5px 0px;
+    margin-top: 92px;
+    margin-right: 11%;
+}
+
+.menu {
+    animation: animate 2s ease-in-out infinite alternate;
+}
+
+@keyframes animate {
+    from {
+        text-shadow: 0 0 6px white, 0 0 15px white, 0 0 12px #848C8E, 0 0 21px #848C8E, 0 0 25px #E3B23C, 0 0 30px #E3B23C;
+    }
+    to {
+        text-shadow: 0 0 6px white, 0 0 15px white, 0 0 12px #848C8E, 0 0 21px #848C8E, 0 0 25px #E3B23C, 0 0 30px #E3B23C);
+    }
+}
+
+nav ul li {
+    float: left;
+    width: 25%;
+    text-align: center;
+    font-family: 'Edo SZ';
+    font-size: 26px;
+    height: 51px;
+}
+
+nav ul::after {
+    content: "";
+    display: table;
+    clear: both;
+    height: 51px;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 10px 0;
+}
+
+nav li:hover {
+    border: 1px solid #848C8E;
+    border-radius: 10px;
+}
+
+nav a:hover {
+    color: #E3B23C;
+}
+
+#hidden {
+    display: none;
+    box-shadow: 0px 1px 2px #ccc;
+    background-color: #E3B23C;
+    height: 150px;
+    width: 100%;
+    margin-top: 0;
+}
+
+nav>ul li:hover #hidden {
+    display: block;
+    color: black;
+}
+
+#hidden li {
+    float: none;
+    width: 100%;
+    text-align: center;
+    border: none;
+}
+
+#hidden li a {
+    color: black;
+    animation: none;
+}
+
+#hidden li a:hover {
+    border-bottom: 2px solid #848C8E;
+}
+
+.grid {
+    display: grid;
+    width: 900px;
+    max-width: 100%;
+    height: 90vh;
+    margin: 175px auto;
+    grid-gap: 5px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    background-color: rgba(255, 255, 255, 0.356)
+}
+
+.box {
+    background-color: aqua;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.box.one {
+    grid-column: span 3;
+    grid-row: span 3;
+    background-image: url(exorciste.jpg)
+}
+
+.box.two {
+    grid-column: span 2;
+    grid-row: span 2;
+    background-image: url(soldat.jpg)
+}
+
+.box.three {
+    grid-column: 1 / span 2;
+    grid-row: 4 / span 3;
+    background-image: url(prison2.jpg)
+}
+
+.box.four {
+    grid-column: 3 / span 1;
+    grid-row: 4 / span 1;
+    background-image: url(trump2.jpg)
+}
+
+.box.five {
+    grid-column: 4 / span 2;
+    grid-row: 3 / span 2;
+    background-image: url(chateau.jpg)
+}
+
+.box.six {
+    grid-column: 3 / span 3;
+    grid-row: 5 / span 2;
+    background-image: url(hopital.jpg)
+}
+
+
+/*footer*/
+
+footer {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    bottom: 0;
+}
+
+.sheep-logo {
+    height: 80px;
+    width: 80px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 1px black;
+    display: flex;
+    justify-content: left;
+    margin: 8px 0px 0px 8px;
+}
+
+.top {
+    font-size: 45px;
+    color: black;
+    display: flex;
+    margin-left: 18%;
+    margin-top: 20px;
+    margin-bottom: 35px;
+    font-weight: bold;
+    background-color: white;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.copyright {
+    display: flex;
+    justify-content: right;
+    margin: 37px 5px 0px 0px;
+    font-size: 17px;
+    color: white;
+}
