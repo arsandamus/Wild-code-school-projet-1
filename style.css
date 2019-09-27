@@ -25,59 +25,6 @@ html {
     }
 }
 
-
-/*opacity: 0;
-    -moz-animation: anim .5s linear forwards 2s;
-    -webkit-animation: anim .5s linear forwards 2s;
-    -o-animation: anim .5s linear forwards 2s;
-    -ms-animation: anim .5s linear forwards 2s;
-    animation: anim .5s linear forwards 2s;
-
-@-moz-keyframes anim {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-@-webkit-keyframes anim {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-@-o-keyframes anim {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-@-ms-keyframes anim {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes anim {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}*/
-
 body {
     background-image: url(forest.jpg);
     background-position: center;
@@ -92,6 +39,8 @@ body {
 header {
     color: white;
     height: 150px;
+    width: 100%;
+    top: 0px;
 }
 
 
@@ -236,7 +185,7 @@ nav>ul li:hover #hidden {
 
 #réseaux {
     position: absolute;
-    top: 8%;
+    top: 5%;
     left: 90%;
     transform: translate(-50%, -50%);
     margin: 0;
@@ -252,8 +201,8 @@ nav>ul li:hover #hidden {
     display: block;
     text-align: center;
     position: relative;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     margin: 0 10px;
     padding: 6px;
     border-radius: 50%;
@@ -275,8 +224,8 @@ nav>ul li:hover #hidden {
     display: block;
     background: linear-gradient(0deg, #fff, #ddd);
     border-radius: 50%;
-    line-height: 45px;
-    font-size: 24px;
+    line-height: 34px;
+    font-size: 20px;
     color: black;
     transition: .5s;
 }
@@ -327,6 +276,7 @@ nav>ul li:hover #hidden {
     float: left;
 }
 
+
 @keyframes slidy {
     0% {
         left: 0%;
@@ -346,12 +296,14 @@ nav>ul li:hover #hidden {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-bottom: 200px;
 }
 
 #Ryan {
     height: 300px;
     margin-right: 100px;
     border-radius: 50%;
+    padding-top: 50px;
 }
 
 #bio {
@@ -362,7 +314,7 @@ nav>ul li:hover #hidden {
 #bio p {
     color: white;
     font-size: 18px;
-    font-family: 'Manjari Bold';
+    font-family: 'Manjari Bold', Courgette;
 }
 
 .espace {
@@ -402,7 +354,7 @@ footer {
 .copyright {
     display: flex;
     justify-content: right;
-    margin: 37px 5px 0px 0px;
+    margin: 37px 100px 0px 0px;
     font-size: 17px;
     color: white;
 }
