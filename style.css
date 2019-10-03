@@ -33,7 +33,7 @@ body {
     animation-name: fadeInOpacity;
     animation-iteration-count: 1;
     animation-timing-function: ease-in;
-    animation-duration: 5s;
+    animation-duration: 3s;
 }
 
 header {
@@ -48,8 +48,8 @@ header {
 
 #jr {
     height: 134%;
-    width: 112%;
     margin-top: 20px;
+    margin-left: 28px;
 }
 
 
@@ -85,6 +85,7 @@ header {
     top: 24px;
     z-index: 20;
     cursor: pointer;
+    display: none;
 }
 
 #bouton-burger .barre-burger {
@@ -463,6 +464,9 @@ footer {
         margin-left: 50px;
     }
     /* Menu Burger */
+    #bouton-burger {
+        display: block;
+    }
     #menu-burger {
         padding: 75px 75px 50px 20px;
     }
@@ -518,5 +522,8 @@ footer {
         position: absolute;
         margin: 20px 0 0 0;
         left: 50%;
+    }
+    #jr {
+        display: none;
     }
 }
