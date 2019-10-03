@@ -45,30 +45,6 @@ header {
 }
 
 
-/* audio*/
-
-.control {
-    position: absolute;
-    top: 15px;
-    left: 47%;
-    border-radius: 20%;
-    z-index: 4;
-    color: white;
-    padding: 5px;
-    cursor: pointer;
-    background-color: black;
-}
-
-.control:hover {
-    background-color: #E3B23C;
-    color: black;
-}
-
-#stop {
-    margin-left: 100px;
-}
-
-
 /* menu-burger */
 
 #bouton-burger {
