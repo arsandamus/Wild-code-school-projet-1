@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>John Ryan | Boutique</title>
+    <link rel="stylesheet" href="boutique.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+
+            <a href="index.html"><img id="jr" src="img/logoJR2.svg" alt="Logo du photographe"></a>
+
+            <nav>
+                <ul>
+                    <li class="menu"><a href="#">Boutique</a></li>
+                    <li class="menu"><a href="#">Destinations</a>
+                        <ul id="hidden">
+                            <li><a href="America.html">Amérique</a></li>
+                            <li><a href="#">Asie</a></li>
+                            <li><a href="#">Europe</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu"><a href="contactMe.html">Contact me</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <ul id="réseaux">
+            <li><a href="#" target="blank"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#" target="blank"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#" target="blank"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#" target="blank"><i class="fab fa-linkedin-in"></i></a></li>
+        </ul>
+        </div>
+    </header>
+
+
+
+
+    <!-- Le panier-->
+    <div id="panier">
+        <a href="#"><img src="img/cart.png" alt="cart" style="height: 50px;width: 50px;"></a>
+        <p id='nbItems'>0 article</p>
+        <p id="total">Total = 0$</p>
+    </div>
+
+    <!-- Début de la boutique-->
+    <div class="title_shop">
+        <h1> ~ Boutique en ligne</h1>
+        <p> / Par John Ryan</p>
+    </div>
+
+    <div class="shop">
+        <div class="card">
+            <img src="img/articles/annabelle.jpeg" alt="article1">
+            <h1>Poupée Anabelle</h1>
+            <p class="price">39.99$</p>
+            <p>Poupée rustique avec un look assez rigolo</p>
+            <p><button onclick="myFunction(0)">Add to Cart</button></p>
+        </div>
+        <div class="card">
+            <img src="img/articles/lament.svg" alt="article2">
+            <h1>Puzzle vintage</h1>
+            <p class="price">69.99$</p>
+            <p>Sympathique puzzle. Invoque des démons</p>
+            <p><button onclick="myFunction(1)">Add to Cart</button></p>
+        </div>
+        <div class="card">
+            <img src="img/articles/chaussettes.jpg" alt="article3">
+            <h1>Chaussette en merinos</h1>
+            <p class="price ">39.99$</p>
+            <p>Tricoté avec la laine de mes moutons!</p>
+            <p><button onclick="myFunction(2)">Add to Cart</button>
+            </p>
+        </div>
+        <div class=" card ">
+            <img src="img/articles/hoodie4.jpg " alt="article4 ">
+            <h1>Hoodie John Ryan</h1>
+            <p class="price ">69.99$</p>
+            <p>Par garder un swag maximum en toute circonstance</p>
+            <p><button onclick="myFunction(3)">Add to Cart</button>
+            </p>
+        </div>
+        <div class="card ">
+            <img src="img/articles/mug.png " alt="article5 ">
+            <h1>Mug John Ryan</h1>
+            <p class="price ">119.99$</p>
+            <p>Le mug ultime pour les vrais Ryan-Fans</p>
+            <p><button onclick="myFunction(4)">Add to Cart</button></p>
+        </div>
+        <div class=" card ">
+            <img src="img/articles/The_Ring_VHS.jpg " alt="article6 ">
+            <h1>VHS japonaise</h1>
+            <p class="price ">49.99$</p>
+            <p>Objet collector.</p>
+            <p><button onclick="myFunction(5)">Add to Cart</button>
+            </p>
+        </div>
+        <div class="card ">
+            <img src="img/articles/T-shirt-blanc-face.png " alt="article6 ">
+            <h1>T-shirt transcendental</h1>
+            <p class="price ">99.99$</p>
+            <p>Made in Perigord. With Love.</p>
+            <p><button onclick="myFunction(6)">Add to Cart</button></p>
+        </div>
+        <div class=" card ">
+            <img src="img/articles/masqueJason.jpg " alt="article6 ">
+            <h1>Masque de Jason</h1>
+            <p class="price ">39.99$</p>
+            <p>Jason non-inclus dans le package</p>
+            <p><button onclick="myFunction(7)">Add to Cart</button>
+            </p>
+        </div>
+        <div class="card ">
+            <img src="img/articles/momie.jpg " alt="article6 ">
+            <h1>Momie souriante</h1>
+            <p class="price ">129.99$</p>
+            <p>En bon état</p>
+            <p><button onclick="myFunction(8)">Add to Cart</button></p>
+        </div>
+    </div>
+
+    <footer>
+        <img class=" sheep-logo " src="img/mouton.png " alt="logo sheep investigation ">
+        <a href="# " class="top "> ^ </a>
+        <p class="copyright ">
+            &#169; Copyright 2019 Sheep Investigation - All Rights Reserved
+        </p>
+    </footer>
+</body>
+<script type="text/javascript " src="boutique.js "></script>
+
+</html>
