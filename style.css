@@ -1,0 +1,522 @@
+@font-face {
+    font-family: 'Edo SZ';
+    src: ('edosz.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 10s;
+}
+
+@keyframes fadeInOpacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+body {
+    background-image: url(forest.jpg);
+    background-position: center;
+    width: 100%;
+    background-size: cover;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 5s;
+}
+
+header {
+    color: white;
+    height: 150px;
+    width: 100%;
+    top: 0px;
+}
+
+
+/*logo*/
+
+#jr {
+    height: 134%;
+    width: 112%;
+    margin-top: 20px;
+}
+
+
+/* audio*/
+
+.control {
+    position: absolute;
+    top: 15px;
+    left: 47%;
+    border-radius: 20%;
+    z-index: 4;
+    color: white;
+    padding: 5px;
+    cursor: pointer;
+    background-color: black;
+}
+
+.control:hover {
+    background-color: #E3B23C;
+    color: black;
+}
+
+#stop {
+    margin-left: 100px;
+}
+
+
+/* menu-burger */
+
+#bouton-burger {
+    position: absolute;
+    left: 5px;
+    top: 24px;
+    z-index: 20;
+    cursor: pointer;
+}
+
+#bouton-burger .barre-burger {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin-top: 3px;
+}
+
+#menu-burger {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    padding: 75px 50px 50px 50px;
+    background-color: #E3B23C;
+    width: 10%;
+    border-radius: 0 25% 25% 0;
+    display: none;
+}
+
+.burger {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    list-style-type: none;
+}
+
+.burger a {
+    color: #848C8E;
+    font-family: 'Edo SZ';
+    font-size: 26px;
+    margin: 30px 0;
+    text-decoration: none;
+}
+
+#hidden-burger {
+    display: none;
+}
+
+nav>ul li:hover #hidden-burger {
+    display: block;
+    color: #848C8E;
+}
+
+#hidden-burger li {
+    margin-top: 20px;
+    list-style-type: none;
+}
+
+#hidden-burger li a {
+    font-size: 20px;
+}
+
+
+/* barre de navigation */
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    height: 97px;
+}
+
+.navbar nav {
+    width: 100%;
+}
+
+.navbar nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 5px 0px 5px 0px;
+    margin-top: 92px;
+    margin-right: 11%;
+}
+
+.menu {
+    animation: animate 2s ease-in-out infinite alternate;
+}
+
+@keyframes animate {
+    from {
+        text-shadow: 0 0 6px white, 0 0 15px white, 0 0 12px #848C8E, 0 0 21px #848C8E, 0 0 25px #E3B23C, 0 0 30px #E3B23C;
+    }
+    to {
+        text-shadow: 0 0 6px white, 0 0 5px white, 0 0 5px #848C8E, 0 0 10px #848C8E, 0 0 10px #E3B23C, 0 0 15px #E3B23C;
+    }
+}
+
+.navbar nav ul li {
+    float: left;
+    width: 25%;
+    text-align: center;
+    font-family: 'Edo SZ';
+    font-size: 26px;
+    height: 51px;
+}
+
+.navbar nav ul::after {
+    content: "";
+    display: table;
+    clear: both;
+    height: 51px;
+}
+
+.navbar nav a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 10px 0;
+}
+
+.navbar nav li:hover {
+    border: 1px solid #848C8E;
+    border-radius: 10px;
+}
+
+.navbar nav a:hover {
+    color: #E3B23C;
+}
+
+
+/*menu déroulant*/
+
+#hidden {
+    display: none;
+    box-shadow: 0px 1px 2px #ccc;
+    background-color: #E3B23C;
+    height: 150px;
+    width: 100%;
+    margin-top: 0;
+    opacity: 0.6;
+    border-radius: 10px;
+}
+
+nav>ul li:hover #hidden {
+    display: block;
+    color: black;
+}
+
+#hidden li {
+    float: none;
+    width: 100%;
+    text-align: center;
+    border: none;
+}
+
+#hidden li a {
+    color: black;
+    animation: none;
+}
+
+#hidden li a:hover {
+    border-bottom: 2px solid #848C8E;
+}
+
+
+/*réseaux sociaux*/
+
+#réseaux {
+    position: absolute;
+    top: 5%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+#réseaux li {
+    list-style: none;
+}
+
+#réseaux li a {
+    display: block;
+    text-align: center;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+    padding: 6px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    text-decoration: none;
+    box-shadow: 0 10px 15px rgba(132, 140, 142, 0.7);
+    background-color: #ddd;
+    transition: .5s;
+}
+
+#réseaux li a:hover {
+    box-shadow: 0 5px 10px rgba(227, 178, 60, 1);
+    background: linear-gradient(0deg, black, #fff);
+}
+
+#réseaux li a .fab {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: linear-gradient(0deg, #fff, #ddd);
+    border-radius: 50%;
+    line-height: 38px;
+    font-size: 20px;
+    color: black;
+    transition: .5s;
+}
+
+#réseaux li:nth-child(1) a:hover .fab {
+    color: #3b5998;
+}
+
+#réseaux li:nth-child(2) a:hover .fab {
+    color: #00aced;
+}
+
+#réseaux li:nth-child(3) a:hover .fab {
+    color: #bc2a8d;
+}
+
+#réseaux li:nth-child(4) a:hover .fab {
+    color: #007bb6;
+}
+
+
+/*carousel*/
+
+#slider {
+    width: 80%;
+    max-width: 1000px;
+    overflow: hidden;
+    margin-top: 200px;
+    margin-left: 25%;
+    opacity: 0.7;
+    border-radius: 15%;
+    margin-bottom: 200px;
+}
+
+#slider figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    text-align: left;
+    animation: 30s slidy infinite;
+}
+
+#slider figure img {
+    width: 20%;
+    height: auto;
+    float: left;
+}
+
+@keyframes slidy {
+    0% {
+        left: 0%;
+    }
+    33.33% {
+        left: -100%;
+    }
+    66.66% {
+        left: -200%;
+    }
+    100% {
+        left: -300%;
+    }
+}
+
+
+/* Bio */
+
+#block2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 200px;
+}
+
+#Ryan {
+    height: 300px;
+    margin-right: 100px;
+    border-radius: 50%;
+    padding-top: 50px;
+}
+
+#bio {
+    width: 40%;
+    align-self: center;
+}
+
+#bio p {
+    color: white;
+    font-size: 18px;
+    font-family: 'Manjari Bold', Courgette;
+}
+
+.espace {
+    margin-left: 45%;
+}
+
+
+/* Footer */
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+}
+
+.sheep-logo {
+    height: 80px;
+    width: 120px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: left;
+    margin: 8px 0px 0px 8px;
+    background-color: black;
+}
+
+.top {
+    font-size: 45px;
+    color: white;
+    display: flex;
+    margin-left: 18%;
+    margin-top: 20px;
+    margin-bottom: 35px;
+    font-weight: bold;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.copyright {
+    display: flex;
+    justify-content: right;
+    margin: 37px 100px 0px 0px;
+    font-size: 17px;
+    color: white;
+}
+
+@media screen and (max-width: 480px) {
+    /* Menu navigation */
+    .menu {
+        display: none;
+    }
+    .navbar a {
+        margin-left: 22%;
+        margin-top: 60px;
+        height: 150%;
+        width: 150%;
+    }
+    /* Réseaux */
+    #réseaux {
+        left: 80%;
+        top: 2%;
+    }
+    #réseaux li a {
+        width: 30px;
+        height: 30px;
+        margin: 0 5px;
+        padding: 5px;
+    }
+    #réseaux li a .fab {
+        line-height: 20px;
+        font-size: 15px;
+    }
+    /* Musique */
+    .control {
+        width: 30px;
+        height: 30px;
+        padding: 0;
+        font-size: 10px;
+        top: 5px;
+        left: 30%;
+    }
+    #stop {
+        margin-left: 50px;
+    }
+    /* Menu Burger */
+    #menu-burger {
+        padding: 75px 75px 50px 20px;
+    }
+    .burger {
+        width: 100px;
+    }
+    .burger a {
+        font-size: 18px;
+    }
+    #show {
+        width: 50px;
+    }
+    #hidden-burger li a {
+        font-size: 15px;
+    }
+    /* Slider */
+    #slider {
+        margin-left: 10%;
+        margin-top: 200px;
+    }
+    #slider figure img {
+        height: 300px;
+    }
+    /* Bio */
+    #block2 {
+        flex-wrap: wrap;
+        margin-top: -100px;
+        margin-bottom: 100px;
+    }
+    #Ryan {
+        margin-right: 50px;
+        padding-top: 30px;
+    }
+    #bio {
+        margin-right: 120px;
+    }
+    #bio p {
+        width: 300px;
+        margin-top: 50px;
+    }
+    /* Footer */
+    .sheep-logo {
+        height: 40px;
+        width: 65px;
+        margin: 20px 0 0 8px;
+    }
+    .copyright {
+        position: absolute;
+        margin: 80px 0 0 124px;
+        font-size: 12px;
+    }
+    .top {
+        position: absolute;
+        margin: 20px 0 0 0;
+        left: 50%;
+    }
+}
