@@ -7,7 +7,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
 }
 
 html {
@@ -25,7 +24,6 @@ body {
 header {
     color: white;
     height: 150px;
-    
 }
 
 
@@ -219,6 +217,7 @@ nav>ul li:hover #hidden {
     margin-top: 170px;
 }
 
+
 /*grid*/
 
 .grid {
@@ -241,7 +240,6 @@ nav>ul li:hover #hidden {
     background-repeat: no-repeat;
 }
 
-
 .box.one {
     grid-column: span 3;
     grid-row: span 3;
@@ -250,7 +248,7 @@ nav>ul li:hover #hidden {
 }
 
 .box.one:hover {
-transform: scale(1.2);
+    transform: scale(1.2);
 }
 
 .box.two {
@@ -262,8 +260,7 @@ transform: scale(1.2);
 
 .box.two:hover {
     transform: scale(1.2);
-    }
-    
+}
 
 .box.three {
     grid-column: 1 / span 2;
@@ -274,7 +271,7 @@ transform: scale(1.2);
 
 .box.three:hover {
     transform: scale(1.2);
-    }    
+}
 
 .box.four {
     grid-column: 3 / span 1;
@@ -285,8 +282,8 @@ transform: scale(1.2);
 
 .box.four:hover {
     transform: scale(1.2);
-    }
-    
+}
+
 .box.five {
     grid-column: 4 / span 2;
     grid-row: 3 / span 2;
@@ -296,8 +293,7 @@ transform: scale(1.2);
 
 .box.five:hover {
     transform: scale(1.2);
-    }
-    
+}
 
 .box.six {
     grid-column: 3 / span 3;
@@ -308,17 +304,15 @@ transform: scale(1.2);
 
 .box.six:hover {
     transform: scale(1.2);
-    }
-
+}
 
 
 /*video*/
 
-
 .container {
-display: flex;
-align-items: center;
-justify-content: space-around;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 footer {
@@ -359,10 +353,9 @@ footer {
     color: white;
 }
 
-@media (max-width: 480px) {
-    .arrow,
-    .light .arrow {
-        background-size: 10px;
-        background-position: 10px 50%;
+@media screen and (max-width:480px) {
+    .box.two {
+        grid-column: 1 / 10;
+        grid-row: 5 /span 2;
     }
 }
