@@ -1,0 +1,29 @@
+body {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    max-width: 100%;
+    margin: 0 auto;
+    grid-template-areas: 
+    "header header header header header header header header header header"
+    "aside aside aside aside .Test .Test .Test .Test .Test .Test"
+    ".........."
+    "footer footer footer footer footer footer footer footer footer footer"
+
+}
+
+header {
+    grid-area: header
+}
+
+aside {
+    grid-area: aside
+}
+
+.Test {
+    grid-area: test
+}
+
+footer {
+    grid-area: footer
+}
