@@ -14,7 +14,7 @@
     }
     
     body {
-        background-image: url(forest.jpg);
+        background-image: url(https://media.giphy.com/media/ogchkIsLvXNVS/giphy.gif);
         background-position: center;
         width: 100%;
         background-size: cover;
@@ -248,8 +248,8 @@
     }
     
     .box.two {
-        grid-column: 6 / span 3;
-        grid-row: 1 / span 2;
+        grid-column: ;
+        grid-row: ;
         margin-right: 50px;
         margin-top: 50px;
     }
@@ -331,7 +331,7 @@
     }
     
     .gallery.two {
-        grid-column: / span 4;
+        grid-column: 1 / span 4;
         grid-row: 1 / span 4;
     }
     
