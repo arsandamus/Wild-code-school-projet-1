@@ -1,0 +1,283 @@
+@font-face {
+    font-family: 'Edo SZ';
+    src: ('edosz.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url(forest.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+}
+
+header {
+    color: white;
+    height: 150px;
+    margin-bottom: 1000px;
+}
+
+
+/*logo*/
+
+#jr {
+    height: 134%;
+    width: 112%;
+    margin-top: 20px;
+}
+
+
+/* barre de navigation */
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    height: 97px;
+}
+
+nav {
+    position: sticky;
+    width: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 5px 0px 5px 0px;
+    margin-top: 92px;
+    margin-right: 11%;
+}
+
+nav ul li {
+    float: left;
+    width: 25%;
+    text-align: center;
+    font-family: 'Edo SZ';
+    font-size: 26px;
+    height: 51px;
+}
+
+nav ul::after {
+    content: "";
+    display: table;
+    clear: both;
+    height: 51px;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 10px 0;
+}
+
+nav li:hover {
+    border: 1px solid #848C8E;
+    border-radius: 10px;
+}
+
+nav a:hover {
+    color: #E3B23C;
+}
+
+
+/*menu déroulant*/
+
+#hidden {
+    display: none;
+    box-shadow: 0px 1px 2px #ccc;
+    background-color: #E3B23C;
+    height: 150px;
+    width: 100%;
+    margin-top: 0;
+    opacity: 0.6;
+    border-radius: 10px;
+}
+
+nav>ul li:hover #hidden {
+    display: block;
+    color: black;
+}
+
+#hidden li {
+    float: none;
+    width: 100%;
+    text-align: center;
+    border: none;
+}
+
+#hidden li a {
+    color: black;
+    animation: none;
+}
+
+#hidden li a:hover {
+    border-bottom: 2px solid #848C8E;
+}
+
+
+/*réseaux sociaux*/
+
+#réseaux {
+    position: absolute;
+    top: 8%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+#réseaux li {
+    list-style: none;
+}
+
+#réseaux li a {
+    display: block;
+    text-align: center;
+    position: relative;
+    width: 60px;
+    height: 60px;
+    margin: 0 10px;
+    padding: 6px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    text-decoration: none;
+    box-shadow: 0 10px 15px rgba(132, 140, 142, 0.7);
+    background-color: #ddd;
+    transition: .5s;
+}
+
+#réseaux li a:hover {
+    box-shadow: 0 5px 10px rgba(227, 178, 60, 1);
+    background: linear-gradient(0deg, black, #fff);
+}
+
+#réseaux li a .fab {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: linear-gradient(0deg, #fff, #ddd);
+    border-radius: 50%;
+    line-height: 45px;
+    font-size: 24px;
+    color: black;
+    transition: .5s;
+}
+
+#réseaux li:nth-child(1) a:hover .fab {
+    color: #3b5998;
+}
+
+#réseaux li:nth-child(2) a:hover .fab {
+    color: #00aced;
+}
+
+#réseaux li:nth-child(3) a:hover .fab {
+    color: #bc2a8d;
+}
+
+#réseaux li:nth-child(4) a:hover .fab {
+    color: #007bb6;
+}
+
+.espace {
+    margin-left: 45%;
+}
+
+.galerie {
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    background-color: #848C8E;
+    max-width: 100%;
+    height: 3000px;
+}
+
+.hangar {
+    grid-column: 1 /span 4;
+    grid-row: 1 / span 3;
+    background-image: url(am1.jpeg);
+}
+
+.sous-sol {
+    background-image: url(am2.jpeg);
+}
+
+.nature {
+
+}
+
+.eglise {
+
+}
+
+.prison {
+
+}
+
+.atelier {
+
+}
+
+.theatre {
+
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+}
+
+.sheep-logo {
+    height: 80px;
+    width: 120px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: left;
+    margin: 8px 0px 0px 8px;
+    background-color: black;
+}
+
+.top {
+    font-size: 45px;
+    color: white;
+    display: flex;
+    margin-left: 18%;
+    margin-top: 20px;
+    margin-bottom: 35px;
+    font-weight: bold;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.copyright {
+    display: flex;
+    justify-content: right;
+    margin: 37px 5px 0px 0px;
+    font-size: 17px;
+    color: white;
+}
+
+@media (max-width: 480px) {
+    .arrow,
+    .light .arrow {
+        background-size: 10px;
+        background-position: 10px 50%;
+    }
+}

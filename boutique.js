@@ -1,6 +1,6 @@
 const messPri = document.getElementById('total')
 const cart = document.getElementById('nbItems');
-const allPrices = [39.99, 69.99, 39.99, 69.99, 119.99, 49.99, 99.99, 39.99, 129.99]
+const allPrices = [39.99, 129.99, 39.99, 69.99, 119.99, 49.99, 99.99, 39.99, 59.99]
 let nbItems = 0;
 let total = 0;
 

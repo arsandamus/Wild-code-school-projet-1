@@ -10,6 +10,7 @@
 
 html {
     scroll-behavior: smooth;
+    font-family: 'Edo SZ';
 }
 
 @keyframes fadeInOpacity {
@@ -319,6 +320,7 @@ nav>ul li:hover #hidden {
     margin-top: 5%;
     padding-right: 30%;
     font-size: 120%;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 

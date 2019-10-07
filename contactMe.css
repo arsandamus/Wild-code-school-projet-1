@@ -26,6 +26,7 @@ body {
     background-position: center;
     width: 100%;
     background-size: cover;
+    font-family: 'Edo SZ';
 }
 
 header {
@@ -230,8 +231,8 @@ nav>ul li:hover #hidden {
     display: block;
     text-align: center;
     position: relative;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     margin: 0 10px;
     padding: 6px;
     border-radius: 50%;
@@ -253,8 +254,8 @@ nav>ul li:hover #hidden {
     display: block;
     background: linear-gradient(0deg, #fff, #ddd);
     border-radius: 50%;
-    line-height: 38px;
-    font-size: 20px;
+    line-height: 30px;
+    font-size: 16px;
     color: black;
     transition: .5s;
 }
@@ -293,7 +294,6 @@ label {
     display: inline-block;
     width: 80px;
     text-align: left;
-    font-family: 'Eras Bold ITC';
     color: white;
     font-size: 120%;
     padding: 20px;
@@ -345,13 +345,11 @@ textarea {
 
 .coordonnées h1 {
     padding-top: 40px;
-    font-family: 'Eras Bold ITC';
     color: white;
 }
 
 .coordonnées p {
     padding: 10px;
-    font-family: 'Eras Bold ITC';
     font-size: 120%;
     color: white;
 }

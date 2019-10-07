@@ -1,0 +1,594 @@
+@font-face {
+    font-family: 'Edo SZ';
+    src: ('edosz.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url(https://media1.giphy.com/media/3oEduToZcGH8HG0sfK/source.gif);
+    background-position: center;
+    background-position: cover;
+    width: 100%;
+    color: white;
+    font-family: 'Edo SZ';
+}
+
+header {
+    color: white;
+    height: 150px;
+}
+
+
+/*logo*/
+
+#jr {
+    width: 112%;
+    height: 100%;
+    margin-top: 20px;
+}
+
+
+/* barre de navigation */
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    height: 97px;
+}
+
+.navbar nav {
+    width: 100%;
+}
+
+.navbar nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 5px 0px 5px 0px;
+    margin-top: 92px;
+    margin-right: 11%;
+}
+
+.menu {
+    animation: animate 2s ease-in-out infinite alternate;
+}
+
+@keyframes animate {
+    from {
+        text-shadow: 0 0 6px white, 0 0 15px white, 0 0 12px #848C8E, 0 0 21px #848C8E, 0 0 25px #E3B23C, 0 0 30px #E3B23C;
+    }
+    to {
+        text-shadow: 0 0 6px white, 0 0 5px white, 0 0 5px #848C8E, 0 0 10px #848C8E, 0 0 10px #E3B23C, 0 0 15px #E3B23C;
+    }
+}
+
+.navbar nav ul li {
+    float: left;
+    width: 25%;
+    text-align: center;
+    font-family: 'Edo SZ';
+    font-size: 26px;
+    height: 51px;
+}
+
+.navbar nav ul::after {
+    content: "";
+    display: table;
+    clear: both;
+    height: 51px;
+}
+
+.navbar nav a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 10px 0;
+}
+
+.navbar nav li:hover {
+    border: 1px solid #848C8E;
+    border-radius: 10px;
+}
+
+.navbar nav a:hover {
+    color: #E3B23C;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    height: 97px;
+}
+
+.navbar nav {
+    width: 100%;
+}
+
+.navbar nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 5px 0px 5px 0px;
+    margin-top: 92px;
+    margin-right: 11%;
+}
+
+.menu {
+    animation: animate 2s ease-in-out infinite alternate;
+}
+
+@keyframes animate {
+    from {
+        text-shadow: 0 0 6px white, 0 0 15px white, 0 0 12px #848C8E, 0 0 21px #848C8E, 0 0 25px #E3B23C, 0 0 30px #E3B23C;
+    }
+    to {
+        text-shadow: 0 0 6px white, 0 0 5px white, 0 0 5px #848C8E, 0 0 10px #848C8E, 0 0 10px #E3B23C, 0 0 15px #E3B23C;
+    }
+}
+
+.navbar nav ul li {
+    float: left;
+    width: 25%;
+    text-align: center;
+    font-family: 'Edo SZ';
+    font-size: 26px;
+    height: 51px;
+}
+
+.navbar nav ul::after {
+    content: "";
+    display: table;
+    clear: both;
+    height: 51px;
+}
+
+.navbar nav a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 10px 0;
+}
+
+.navbar nav li:hover {
+    border: 1px solid #848C8E;
+    border-radius: 10px;
+}
+
+.navbar nav a:hover {
+    color: #E3B23C;
+}
+
+
+/*menu déroulant*/
+
+#hidden {
+    display: none;
+    box-shadow: 0px 1px 2px #ccc;
+    background-color: #E3B23C;
+    height: 150px;
+    width: 100%;
+    margin-top: 0;
+    opacity: 0.6;
+    border-radius: 10px;
+}
+
+nav>ul li:hover #hidden {
+    display: block;
+    color: black;
+}
+
+#hidden li {
+    float: none;
+    width: 100%;
+    text-align: center;
+    border: none;
+}
+
+#hidden li a {
+    color: black;
+    animation: none;
+}
+
+#hidden li a:hover {
+    border-bottom: 2px solid #848C8E;
+}
+
+
+/*réseaux sociaux*/
+
+#réseaux {
+    position: absolute;
+    top: 5%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+#réseaux li {
+    list-style: none;
+}
+
+#réseaux li a {
+    display: block;
+    text-align: center;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    padding: 6px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    text-decoration: none;
+    box-shadow: 0 10px 15px rgba(132, 140, 142, 0.7);
+    background-color: #ddd;
+    transition: .5s;
+}
+
+#réseaux li a:hover {
+    box-shadow: 0 5px 10px rgba(227, 178, 60, 1);
+    background: linear-gradient(0deg, black, #fff);
+}
+
+#réseaux li a .fab {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: linear-gradient(0deg, #fff, #ddd);
+    border-radius: 50%;
+    line-height: 30px;
+    font-size: 16px;
+    color: black;
+    transition: .5s;
+}
+
+#réseaux li:nth-child(1) a:hover .fab {
+    color: #3b5998;
+}
+
+#réseaux li:nth-child(2) a:hover .fab {
+    color: #00aced;
+}
+
+#réseaux li:nth-child(3) a:hover .fab {
+    color: #bc2a8d;
+}
+
+#réseaux li:nth-child(4) a:hover .fab {
+    color: #007bb6;
+}
+
+.espace {
+    margin-left: 45%;
+}
+
+.titleAsie {
+    display: block;
+    text-align: center;
+    position: relative;
+    color: white;
+    margin-top: 160px;
+}
+
+.titlepage {
+    margin-left: 35px;
+    margin-top: 20px;
+}
+
+.titlevideo {
+    padding: 5px;
+}
+
+.presAokititle {
+    padding: 5px;
+}
+
+
+/*grid*/
+
+.grid {
+    display: grid;
+    width: 100%;
+    max-width: 100%;
+    grid-template-columns: repeat(10, 1fr);
+    height: 3000px;
+    margin: 0px auto;
+    grid-template-rows: repeat(20, 1fr);
+    grid-gap: 5px;
+}
+
+.box {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.box.one {
+    grid-column: 1 / span 4;
+    grid-row: 1 / span 2;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.box.two {
+    grid-column: 6 / span 3;
+    grid-row: 1 / span 2;
+    margin-right: 50px;
+    margin-top: 50px;
+}
+
+.box.three {
+    grid-column: 1 / span 2;
+    grid-row: 6 / span 1;
+    margin-left: 0px;
+    margin-left: 80px;
+}
+
+.box.eight {
+    grid-column: 3 / span 2;
+    grid-row: 6 / span 1;
+    margin-top: 40px;
+    margin-left: 80px;
+}
+
+.box.four {
+    grid-column: 7 / span 2;
+    grid-row: 6 / span 1;
+    margin-top: 55px;
+}
+
+.box.five {
+    grid-column: 9 /span 1;
+    grid-row: 6 / span 1;
+    margin-top: 60px;
+}
+
+.box.seven {
+    grid-column: 1 / span 2;
+    grid-row: 14 / span 3;
+    background-image: url(kuchisakeonna.jpg);
+    margin-left: 50px;
+}
+
+.box.nine {
+    grid-column: 3 / span 3;
+    grid-row: 14 / span 3;
+    margin-right: 10px;
+}
+
+.box.ten {
+    grid-column: 6 / span 3;
+    grid-row: 14 / span 3;
+    margin-left: 40px;
+}
+
+.gridgallery {
+    grid-column: 1 /span 10;
+    grid-row: 8 / span 2;
+    margin-top: 300px;
+}
+
+
+/* grille dans la grille (gallerie)*/
+
+.gridgallery {
+    display: grid;
+    max-width: 100%;
+    height: 600px;
+    width: 950px;
+    margin: 0px auto;
+    grid-gap: 2px;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    border-style: solid;
+    border-color: white;
+}
+
+.gallery {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.gallery.one {
+    grid-column: 1 / span 6;
+    grid-row: 1 / span 3;
+}
+
+.gallery.two {
+    grid-column: 7 / span 4;
+    grid-row: 1 / span 4;
+}
+
+.gallery.three {
+    grid-column: 1 / span 4;
+    grid-row: 4 / span 3;
+}
+
+.gallery.four {
+    grid-column: 5 / span 2;
+    grid-row: 4 /span 3;
+}
+
+.gallery.five {
+    grid-column: 7 / span 4;
+    grid-row: 5 / span 2;
+}
+
+
+/*fin gallerie*/
+
+footer {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    bottom: 0;
+}
+
+.sheep-logo {
+    height: 80px;
+    width: 80px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 1px black;
+    display: flex;
+    justify-content: left;
+    margin: 8px 0px 0px 8px;
+}
+
+.top {
+    font-size: 45px;
+    color: rgb(255, 255, 255);
+    display: flex;
+    margin-left: 18%;
+    margin-top: 20px;
+    margin-bottom: 35px;
+    font-weight: bold;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.copyright {
+    display: flex;
+    justify-content: right;
+    margin: 37px 5px 0px 0px;
+    font-size: 17px;
+    color: white;
+}
+
+@media screen and (max-width: 395px) {
+    .grid {
+        display: grid;
+        width: 100%;
+        max-width: 100%;
+        grid-template-columns: repeat(10, 1fr);
+        height: 3000px;
+        margin: 0px auto;
+        grid-template-rows: auto;
+        grid-gap: 0;
+    }
+    #presentimg {
+        width: 320px;
+        height: 270px;
+    }
+    iframe {
+        width: 320px;
+        height: 270px;
+    }
+    .box.one {
+        grid-column: 2 / span 9;
+        grid-row: 1 / span 3;
+        margin: 0;
+        margin-bottom: 60px;
+    }
+    .box.two {
+        grid-column: 2 / span 9;
+        grid-row: 4 / span 3;
+        margin: 0;
+        margin-bottom: 60px;
+    }
+    .box.three {
+        grid-column: 2 / span 2;
+        grid-row: 7 / span 2;
+        margin: 0;
+        height: 600px;
+    }
+    .box.eight {
+        grid-column: 2 / span 2;
+        grid-row: 9 / span 1;
+        margin: 0;
+        height: 590px;
+    }
+    .box.four {
+        grid-column: 2 / span 2;
+        grid-row: 10 / span 2;
+        margin: 0;
+    }
+    .box.five {
+        grid-column: 3 /span 5;
+        grid-row: 12 / span 2;
+        margin: 0;
+        margin-bottom: 60px;
+    }
+    .box.seven {
+        grid-column: 2 / span 6;
+        grid-row: 14 / span 3;
+        background-image: url(kuchisakeonna.jpg);
+        margin: 0;
+        width: 300px;
+        height: 200px;
+    }
+    .box.nine {
+        grid-column: 3 / span 6;
+        grid-row: 17 / span 3;
+        margin: 0;
+        margin-bottom: 60px;
+    }
+    .box.ten {
+        grid-column: 2 / span 3;
+        grid-row: 20 / span 3;
+        margin: 0;
+        margin-bottom: 60px;
+    }
+    .gridgallery {
+        grid-column: 1 /span 10;
+        grid-row: 23 / span 20;
+        border-color: rgba(255, 255, 255, 0);
+        margin: 0;
+    }
+    #gloomy {
+        width: 370px;
+        height: 326px;
+    }
+    #noose {
+        width: 370px;
+        height: 296px;
+    }
+    #blueforest {
+        width: 370px;
+        height: 296px;
+    }
+    #tree {
+        width: 370px;
+        height: 296px;
+    }
+    #branch {
+        width: 370px;
+        height: 300px;
+    }
+    .gallery.one {
+        grid-column: 1 / span 9;
+        grid-row: 23 / span 3;
+    }
+    .gallery.two {
+        grid-column: 1 / span 9;
+        grid-row: 26 / span 3;
+    }
+    .gallery.three {
+        grid-column: 1 / span 9;
+        grid-row: 29 / span 3;
+    }
+    .gallery.four {
+        grid-column: 1 / span 9;
+        grid-row: 32 /span 3;
+    }
+    .gallery.five {
+        grid-column: 1 / span 9;
+        grid-row: 35 / span 2;
+    }
+    /*fin gallerie*/
+}
