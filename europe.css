@@ -1,4 +1,4 @@
-@font-face {
+                    @font-face {
     font-family: 'Edo SZ';
     src: url('edosz.ttf');
     font-family: 'Horror';
@@ -43,777 +43,830 @@ header {
     margin-left: 0%;
 }
 
-
+<<<<<<< HEAD
 /* barre de navigation */
 
-.navbar {
+=======>>>>>>>5f2b03f298f6f4bcdee17e8c6eef236ed1141614 .navbar {
     display: flex;
     flex-direction: row;
     height: 97px;
 }
 
-.navbar nav {
+<<<<<<< HEAD .navbar nav {
     width: 100%;
 }
 
 .navbar nav ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    padding: 5px 0px 5px 0px;
-    margin-top: 92px;
-    margin-right: 11%;
-}
-
-.menu {
-    animation: animate 2s ease-in-out infinite alternate;
-}
-
-@keyframes animate {
-    from {
-        text-shadow: 0 0 6px white, 0 0 15px white, 0 0 12px #848C8E, 0 0 21px #848C8E, 0 0 25px #E3B23C, 0 0 30px #E3B23C;
+    =======nav {
+        position: sticky;
+        width: 100%;
     }
-    to {
-        text-shadow: 0 0 6px white, 0 0 5px white, 0 0 5px #848C8E, 0 0 10px #848C8E, 0 0 10px #E3B23C, 0 0 15px #E3B23C;
+    nav ul {
+        >>>>>>>5f2b03f298f6f4bcdee17e8c6eef236ed1141614 list-style-type: none;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding: 5px 0px 5px 0px;
+        margin-top: 92px;
+        <<<<<<< HEAD margin-right: 11%;
+        =======margin-right: 12%;
+        >>>>>>>5f2b03f298f6f4bcdee17e8c6eef236ed1141614
+    }
+    .menu {
+        animation: animate 2s ease-in-out infinite alternate;
+    }
+    <<<<<<< HEAD=======>>>>>>>5f2b03f298f6f4bcdee17e8c6eef236ed1141614 @keyframes animate {
+        from {
+            text-shadow: 0 0 6px white, 0 0 15px white, 0 0 12px #848C8E, 0 0 21px #848C8E, 0 0 25px #E3B23C, 0 0 30px #E3B23C;
+        }
+        to {
+            <<<<<<< HEAD text-shadow: 0 0 6px white, 0 0 5px white, 0 0 5px #848C8E, 0 0 10px #848C8E, 0 0 10px #E3B23C, 0 0 15px #E3B23C;
+        }
+    }
+    .navbar nav ul li {
+        =======text-shadow: 0 0 6px white, 0 0 15px white, 0 0 12px #848C8E, 0 0 21px #848C8E, 0 0 25px #E3B23C, 0 0 30px #E3B23C);
     }
 }
 
-.navbar nav ul li {
-    float: left;
+nav ul li {
+    >>>>>>>5f2b03f298f6f4bcdee17e8c6eef236ed1141614 float: left;
     width: 25%;
     text-align: center;
     font-family: 'Edo SZ';
-    font-size: 26px;
+    <<<<<<< HEAD font-size: 26px;
     height: 51px;
 }
 
 .navbar nav ul::after {
-    content: "";
+    =======font-size: 30px;
+    height: 51px;
+}
+
+nav ul::after {
+    >>>>>>>5f2b03f298f6f4bcdee17e8c6eef236ed1141614 content: "";
     display: table;
     clear: both;
     height: 51px;
 }
 
-.navbar nav a {
-    display: block;
-    text-decoration: none;
-    color: white;
-    padding: 10px 0;
-}
-
-.navbar nav li:hover {
-    border: 1px solid #848C8E;
-    border-radius: 10px;
-}
-
-.navbar nav a:hover {
-    color: #E3B23C;
-}
-
-
-/*menu déroulant*/
-
-#hidden {
-    display: none;
-    box-shadow: 0px 1px 2px #ccc;
-    background-color: #E3B23C;
-    height: 150px;
-    width: 100%;
-    margin-top: 0;
-    opacity: 0.6;
-    border-radius: 10px;
-}
-
-nav>ul li:hover #hidden {
-    display: block;
-    color: black;
-}
-
-#hidden li {
-    float: none;
-    width: 100%;
-    text-align: center;
-    border: none;
-}
-
-#hidden li a {
-    color: black;
-    animation: none;
-}
-
-#hidden li a:hover {
-    border-bottom: 2px solid #848C8E;
-}
-
-
-/*réseaux sociaux*/
-
-#réseaux {
-    position: absolute;
-    top: 5%;
-    left: 90%;
-    transform: translate(-50%, -50%);
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-#réseaux li {
-    list-style: none;
-}
-
-#réseaux li a {
-    display: block;
-    text-align: center;
-    position: relative;
-    width: 50px;
-    height: 50px;
-    margin: 0 10px;
-    padding: 6px;
-    border-radius: 50%;
-    box-sizing: border-box;
-    text-decoration: none;
-    box-shadow: 0 10px 15px rgba(132, 140, 142, 0.7);
-    background-color: #ddd;
-    transition: .5s;
-}
-
-#réseaux li a:hover {
-    box-shadow: 0 5px 10px rgba(227, 178, 60, 1);
-    background: linear-gradient(0deg, black, #fff);
-}
-
-#réseaux li a .fab {
-    width: 100%;
-    height: 100%;
-    display: block;
-    background: linear-gradient(0deg, #fff, #ddd);
-    border-radius: 50%;
-    line-height: 38px;
-    font-size: 20px;
-    color: black;
-    transition: .5s;
-}
-
-#réseaux li:nth-child(1) a:hover .fab {
-    color: #3b5998;
-}
-
-#réseaux li:nth-child(2) a:hover .fab {
-    color: #00aced;
-}
-
-#réseaux li:nth-child(3) a:hover .fab {
-    color: #bc2a8d;
-}
-
-#réseaux li:nth-child(4) a:hover .fab {
-    color: #007bb6;
-}
-
-.title {
-    color: #D6BAB4;
-    font-family: 'Horror';
-    font-size: 100px;
-    text-align: center;
-    margin-top: 13%;
-}
-
-.title:hover {
-    color: #E3B23C;
-}
-
-
-/* body */
-
-@import "https://fonts.googleapis.com/css?family=Open+Sans";
-* {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-a {
-    text-decoration: none;
-}
-
-.container {
-    height: 400px;
-    margin-top: 80px;
-}
-
-.gallery {
-    display: flex;
-    list-style-type: none;
-    height: 100%;
-    margin-top: 20px;
-    margin-left: 10%;
-    margin-right: 10%;
-    justify-content: center;
-}
-
-.gallery li {
-    float: left;
-    height: 100%;
-    width: 400px;
-    background: #2E4053;
-}
-
-.gallery .flip {
-    height: 100%;
-    width: 100%;
-    position: relative;
-    -webkit-transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-    -webkit-perspective: 2000px;
-    -moz-perspective: 2000px;
-    perspective: 2000px;
-}
-
-.gallery li:hover .front-side {
-    opacity: 0;
-    -webkit-transform: rotateY(180deg);
-    -moz-transform: rotateY(180deg);
-    transform: rotateY(180deg);
-}
-
-.gallery li:hover .back-side {
-    background: #000;
-    opacity: 1;
-    -webkit-transform: rotateY(0deg);
-    -moz-transform: rotateY(0deg);
-    transform: rotateY(0deg);
-}
-
-.gallery .front-side,
-.gallery .back-side {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    backface-visibility: hidden;
-    -webkit-transition: transform 0.4s ease-out, opacity 0.3s ease-out;
-    -moz-transition: transform 0.4s ease-out, opacity 0.3s ease-out;
-    transition: transform 0.4s ease-out, opacity 0.3s ease-out;
-}
-
-.gallery .front-side {
-    opacity: 1;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    -webkit-transform: rotateY(0deg);
-    -moz-transform: rotateY(0deg);
-    transform: rotateY(0deg);
-    filter: grayscale(100%);
-}
-
-.gallery .back-side {
-    opacity: 0;
-    -webkit-transform: rotateY(-180deg);
-    -moz-transform: rotateY(-180deg);
-    transform: rotateY(-180deg);
-}
-
-.gallery .back-side>a {
-    display: block;
-    width: 100%;
-    height: 100%;
-}
-
-.gallery li:nth-child(1) .front-side {
-    background-image: url('https://img-4.linternaute.com/cv2k3btDzZhtnviFc3M3asFIr2Y=/1240x/smart/7244e5210e52400fa046c092d12d307f/ccmcms-linternaute/11468236.jpg');
-}
-
-.gallery li:nth-child(1) .loader {
-    border-top-color: #F39C12;
-    border-left-color: #F39C12;
-}
-
-.gallery li:nth-child(1) .text h3 {
-    color: #F39C12;
-}
-
-.gallery li:nth-child(1) .text h3:after {
-    background: #F5B041;
-}
-
-.gallery li:nth-child(2) .front-side {
-    background-image: url('https://blog.eurail.com/wp-content/uploads/2017/09/Haunted-places-in-Europe-Chateau-Miranda-in-Belgium.jpg');
-}
-
-.gallery li:nth-child(3) .front-side {
-    background-image: url('https://voyages.michelin.fr/sites/default/files/styles/poi_slideshow_big/public/images/travel_guide/NX-24474.jpg?itok=34Dqyf3v');
-}
-
-.gallery li:nth-child(3) .loader {
-    border-top-color: #424949;
-    border-left-color: #424949;
-}
-
-.gallery li:nth-child(3) .text h3 {
-    color: #424949;
-}
-
-.gallery li:nth-child(3) .text h3:after {
-    background: #515A5A;
-}
-
-.gallery li:nth-child(4) .front-side {
-    background-image: url('https://blog.eurail.com/wp-content/uploads/2017/09/Haunted-places-in-Europe-Chateau-Miranda-in-Belgium.jpg');
-}
-
-.gallery li:nth-child(4) .loader {
-    border-top-color: #F1C40F;
-    border-left-color: #F1C40F;
-}
-
-.gallery li:nth-child(4) .text h3 {
-    color: #F1C40F;
-}
-
-.gallery li:nth-child(4) .text h3:after {
-    background: #F7DC6F;
-}
-
-.gallery li:nth-child(5) .front-side {
-    background-image: url('');
-}
-
-.gallery li:nth-child(5) .loader {
-    border-top-color: #1ABC9C;
-    border-left-color: #1ABC9C;
-}
-
-.gallery li:nth-child(5) .text h3 {
-    color: #1ABC9C;
-}
-
-.gallery li:nth-child(5) .text h3:after {
-    background: #48C9B0;
-}
-
-.gallery li:nth-child(6) .front-side {
-    background-image: url('https://file.aperion.it/slir/w800-h600/caf/7/6/761326963752.jpg');
-}
-
-.gallery li:nth-child(6) .loader {
-    border-top-color: #E74C3C;
-    border-left-color: #E74C3C;
-}
-
-.gallery li:nth-child(6) .text h3 {
-    color: #E74C3C;
-}
-
-.gallery li:nth-child(6) .text h3:after {
-    background: #EC7063;
-}
-
-.gallery li:nth-child(7) .front-side {
-    background-image: url('https://blog.eurail.com/wp-content/uploads/2017/09/Haunted-places-in-Europe-Chateau-Miranda-in-Belgium.jpg');
-}
-
-.gallery li:nth-child(7) .loader {
-    border-top-color: #8E44AD;
-    border-left-color: #8E44AD;
-}
-
-.gallery li:nth-child(7) .text h3 {
-    color: #8E44AD;
-}
-
-.gallery li:nth-child(7) .text h3:after {
-    background: #A569BD;
-}
-
-.gallery li:nth-child(8) .front-side {
-    background-image: url('http://pre06.deviantart.net/73a2/th/pre/i/2014/080/5/7/lina_by_haryarti-d7b48eu.jpg');
-}
-
-.gallery li:nth-child(8) .loader {
-    border-top-color: #F39C12;
-    border-left-color: #F39C12;
-}
-
-.gallery li:nth-child(8) .text h3 {
-    color: #F39C12;
-}
-
-.gallery li:nth-child(8) .text h3:after {
-    background: #F5B041;
-}
-
-.gallery .content {
-    text-align: center;
-    position: relative;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    transform: translateY(-50%);
-    padding: 25px 20px;
-}
-
-.gallery li:hover .text {
-    opacity: 1;
-    visibility: visible;
-    max-height: 2000px;
-    -webkit-transition: opacity .3s ease-in 1.5s, max-height .1s ease 1.5s;
-    -moz-transition: opacity .3s ease-in 1.5s, max-height .1s ease 1.5s;
-    transition: opacity .3s ease-in 1.5s, max-height .1s ease 1.5s;
-}
-
-.gallery li:hover .loader {
-    opacity: 1;
-    visibility: visible;
-    -webkit-animation: hide .1s ease-in-out 1.4s forwards, load .75s infinite;
-    -moz-animation: hide .1s ease-in-out 1.4s forwards, load .75s infinite;
-    animation: hide .1s ease-in-out 1.4s forwards, load .75s infinite;
-}
-
-.gallery .text {
-    opacity: 0;
-    visibility: hidden;
-    max-height: 0;
-}
-
-.gallery .content h3 {
-    position: relative;
-    color: #3498DB;
-    font: normal 30px/1.25 'Open Sans';
-    margin-bottom: 25px;
-}
-
-.gallery .content h3:after {
-    content: '';
-    position: absolute;
-    width: 50px;
-    height: 3px;
-    bottom: -10px;
-    left: 50%;
-    margin-left: -25px;
-    background: #85C1E9;
-}
-
-.gallery .content p {
-    margin: 10px 0;
-    color: #D6DBDF;
-    font: normal 16px/1.25 'Open Sans';
-}
-
-.gallery .loader {
-    opacity: 0;
-    visibility: hidden;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    margin: auto;
-    border: 4px solid transparent;
-    border-top-color: #3498DB;
-    border-left-color: #3498DB;
-}
-
-
-/*--------------------------------------- personnages -------------------------------------------------------*/
-
-.pictures-perso {
-    display: flex;
-    flex-direction: row;
-    margin-top: 150px;
-    justify-content: center;
-    justify-content: space-around;
-    margin-bottom: 10%;
-}
-
-.witch {
-    display: flex;
-    height: 320px;
-    width: 400px;
-    border-radius: 10px;
-}
-
-.plush {
-    display: flex;
-    height: 370px;
-    width: 250px;
-    border-radius: 10px;
-}
-
-.clown {
-    display: flex;
-    height: 320px;
-    width: 400px;
-    border-radius: 10px;
-}
-
-
-/* --------------------- Grid ---------------------------------*/
-
-* {
-    box-sizing: border-box;
-}
-
-h1 {
-    font-family: 'Creepster';
-    padding: 2vmin;
-    text-align: left;
-    font-size: 10vmin;
-    color: #000;
-    text-shadow: 0 0 3px rgba(0, 0, 0, .3);
-    margin: 10px 0;
-}
-
-.masonry {
-    padding: 2vmin;
-    min-width: 320px;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.masonry>* {
-    flex: 1 1 250px;
-    margin: 1vmin;
-    max-height: 30vmin;
-    display: flex;
-    overflow: hidden;
-    align-items: center;
-    justify-content: center;
-}
-
-.masonry :nth-child(3n+3) {
-    flex-grow: 4;
-}
-
-@media screen and (min-width: 640px) {
-    .masonry :nth-child(3n+5) {
-        flex-grow: 2;
-        flex-basis: 20%;
+<<<<<<< HEAD .navbar nav a {
+    =======nav a {
+        >>>>>>>5f2b03f298f6f4bcdee17e8c6eef236ed1141614 display: block;
+        text-decoration: none;
+        color: white;
+        padding: 10px 0;
     }
-    .masonry :nth-child(3n+4) {
-        flex-grow: 2;
-        flex-basis: 350px;
-    }
-    .masonry :nth-last-child(1),
-    .masonry :nth-last-child(2) {
-        flex-basis: 40%;
-    }
-}
-
-@supports (display: grid) and (object-fit: cover) {
-    .masonry {
-        display: grid;
-        grid-auto-flow: dense;
-        grid-template-columns: repeat(auto-fit, minmax(calc(5rem + 10vmax), max-content));
-        grid-gap: 1vmin;
-    }
-    .masonry>* {
-        display: initial;
-        flex: 1 1 300px;
-        margin: initial;
-        max-height: initial;
-    }
-    .masonry img {
-        width: 100%;
-        height: 100%;
-        display: block;
-        object-fit: cover;
-    }
-    .masonry :nth-child(2n+2) {
-        grid-row-end: span 1;
-    }
-    @media screen and (min-width: 640px) {
-        .masonry :first-child {
-            grid-row-start: span 3;
-            grid-column-start: span 3;
+    <<<<<<< HEAD .navbar nav li:hover {
+        =======nav li:hover {
+            >>>>>>>5f2b03f298f6f4bcdee17e8c6eef236ed1141614 border: 1px solid #848C8E;
+            border-radius: 10px;
         }
-        .masonry :nth-child(2n+3) {
-            grid-row-start: span 3;
+        <<<<<<< HEAD .navbar nav a:hover {
+            color: #E3B23C;
         }
-        .masonry :nth-child(6n+3) {
-            grid-row-start: span 2;
+        /*menu déroulant*/
+        =======nav a:hover {
+            color: #E3B23C;
         }
-    }
-    @media screen and (min-width: 960px) {
-        .masonry :first-child {
-            grid-row-start: span 2;
-            grid-column-start: span 2;
+        >>>>>>>5f2b03f298f6f4bcdee17e8c6eef236ed1141614 #hidden {
+            display: none;
+            box-shadow: 0px 1px 2px #ccc;
+            background-color: #E3B23C;
+            height: 150px;
+            width: 100%;
+            margin-top: 0;
+            <<<<<<< HEAD opacity: 0.6;
+            border-radius: 10px;
+            =======>>>>>>>5f2b03f298f6f4bcdee17e8c6eef236ed1141614
         }
-        .masonry :nth-child(8n+9) {
-            grid-column-start: span 1;
-            grid-row-start: span 3;
+        nav>ul li:hover #hidden {
+            display: block;
+            color: black;
         }
-        .masonry :nth-child(2n+3) {
-            grid-row-start: span 2;
+        #hidden li {
+            float: none;
+            width: 100%;
+            text-align: center;
+            border: none;
         }
-    }
-}
-
-
-/* some effects */
-
-.masonry>* {
-    filter: saturate(0);
-    transition: 5s filter 1s;
-}
-
-.masonry> :hover {
-    filter: saturate(1);
-    transition: filter .25s;
-}
-
-.pfin {
-    text-align: center;
-    margin-top: 80px;
-    font-size: 100px;
-    font-family: 'danger';
-}
-
-.pfin:hover {
-    color: #E3B23C;
-}
-
-
-/* ------------------------- footer -------------------------- */
-
-footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-    height: 100px;
-    margin-top: 10%;
-    border-top: 2px whitesmoke inset;
-}
-
-.sheep-logo {
-    height: 80px;
-    width: 80px;
-    border-radius: 10px;
-    box-shadow: 3px 3px 1px black;
-    display: flex;
-    justify-content: left;
-    margin: 8px 0px 0px 8px;
-}
-
-.top {
-    font-size: 45px;
-    color: rgb(255, 255, 255);
-    display: flex;
-    margin-left: 18%;
-    margin-top: 20px;
-    margin-bottom: 35px;
-    font-weight: bold;
-    border-radius: 10px;
-    text-decoration: none;
-}
-
-.copyright {
-    display: flex;
-    justify-content: right;
-    margin: 37px 5px 0px 0px;
-    font-size: 17px;
-    color: white;
-}
-
-
-/* ----------------------- media Queries -------------------------*/
-
-@-webkit-keyframes load {
-    0% {
-        -webkit-transform: rotate(0deg);
-    }
-    100% {
-        -webkit-transform: rotate(360deg);
-    }
-}
-
-@-moz-keyframes load {
-    0% {
-        -moz-transform: rotate(0deg);
-    }
-    100% {
-        -moz-transform: rotate(360deg);
-    }
-}
-
-@keyframes load {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-@-webkit-keyframes hide {
-    100% {
-        visibility: hidden;
-        opacity: 0;
-    }
-}
-
-@-moz-keyframes hide {
-    100% {
-        visibility: hidden;
-        opacity: 0;
-    }
-}
-
-@keyframes hide {
-    100% {
-        visibility: hidden;
-        opacity: 0;
-    }
-}
-
-@media (max-width: 480px) {
-    .arrow,
-    .light .arrow {
-        background-size: 10px;
-        background-position: 10px 50%;
-    }
-}
-
-@media (max-width: 1024px) {
-    .pictures-perso {
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-    }
-    .witch {
-        height: 260px;
-        width: 350px;
-        margin-bottom: 40px;
-    }
-    .plush {
-        height: 250px;
-        width: 210px;
-        margin-bottom: 40px;
-    }
-    .clown {
-        height: 260px;
-        width: 350px;
-    }
-    .copyright {
-        margin-left: 30%;
-        margin-top: 1%;
-        text-align: right;
-    }
-    .top {
-        margin-left: 32%;
-    }
-    nav ul {
-        justify-content: space-between;
-    }
-    nav ul li {
-        font-size: 18px;
-    }
-    .title {
-        margin-top: 20%;
-    }
-}
+        #hidden li a {
+            color: black;
+            animation: none;
+        }
+        #hidden li a:hover {
+            border-bottom: 2px solid #848C8E;
+        }
+        /*réseaux sociaux*/
+        #réseaux {
+            position: absolute;
+            <<<<<<< HEAD top: 5%;
+            =======top: 8%;
+            >>>>>>>5f2b03f298f6f4bcdee17e8c6eef236ed1141614 left: 90%;
+            transform: translate(-50%, -50%);
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        #réseaux li {
+            list-style: none;
+        }
+        #réseaux li a {
+            display: block;
+            text-align: center;
+            position: relative;
+            <<<<<<< HEAD width: 50px;
+            height: 50px;
+            =======width: 60px;
+            height: 60px;
+            >>>>>>>5f2b03f298f6f4bcdee17e8c6eef236ed1141614 margin: 0 10px;
+            padding: 6px;
+            border-radius: 50%;
+            box-sizing: border-box;
+            text-decoration: none;
+            box-shadow: 0 10px 15px rgba(132, 140, 142, 0.7);
+            background-color: #ddd;
+            transition: .5s;
+        }
+        #réseaux li a:hover {
+            box-shadow: 0 5px 10px rgba(227, 178, 60, 1);
+            background: linear-gradient(0deg, black, #fff);
+        }
+        #réseaux li a .fab {
+            width: 100%;
+            height: 100%;
+            display: block;
+            background: linear-gradient(0deg, #fff, #ddd);
+            border-radius: 50%;
+            <<<<<<< HEAD line-height: 38px;
+            font-size: 20px;
+            =======line-height: 45px;
+            font-size: 24px;
+            >>>>>>>5f2b03f298f6f4bcdee17e8c6eef236ed1141614 color: black;
+            transition: .5s;
+        }
+        #réseaux li:nth-child(1) a:hover .fab {
+            color: #3b5998;
+        }
+        #réseaux li:nth-child(2) a:hover .fab {
+            color: #00aced;
+        }
+        #réseaux li:nth-child(3) a:hover .fab {
+            color: #bc2a8d;
+        }
+        #réseaux li:nth-child(4) a:hover .fab {
+            color: #007bb6;
+        }
+        <<<<<<< HEAD .title {
+            color: #D6BAB4;
+            font-family: 'Horror';
+            font-size: 100px;
+            text-align: center;
+            margin-top: 13%;
+        }
+        .title:hover {
+            color: #E3B23C;
+        }
+        =======.title {
+            color: #D6BAB4;
+            font-family: 'Horror';
+            font-size: 100px;
+            text-align: center;
+            margin-top: 13%;
+        }
+        .title:hover {
+            color: #E3B23C;
+        }
+        >>>>>>>5f2b03f298f6f4bcdee17e8c6eef236ed1141614
+        /* body */
+        @import "https://fonts.googleapis.com/css?family=Open+Sans";
+        * {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        a {
+            text-decoration: none;
+        }
+        .container {
+            height: 400px;
+            margin-top: 80px;
+        }
+        .gallery {
+            display: flex;
+            list-style-type: none;
+            height: 100%;
+            margin-top: 20px;
+            margin-left: 10%;
+            margin-right: 10%;
+            justify-content: center;
+            <<<<<<< HEAD=======>>>>>>>5f2b03f298f6f4bcdee17e8c6eef236ed1141614
+        }
+        .gallery li {
+            float: left;
+            height: 100%;
+            width: 400px;
+            background: #2E4053;
+        }
+        .gallery .flip {
+            height: 100%;
+            width: 100%;
+            position: relative;
+            -webkit-transform-style: preserve-3d;
+            -moz-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+            -webkit-perspective: 2000px;
+            -moz-perspective: 2000px;
+            perspective: 2000px;
+        }
+        .gallery li:hover .front-side {
+            opacity: 0;
+            -webkit-transform: rotateY(180deg);
+            -moz-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+        }
+        .gallery li:hover .back-side {
+            background: #000;
+            opacity: 1;
+            -webkit-transform: rotateY(0deg);
+            -moz-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+        }
+        .gallery .front-side,
+        .gallery .back-side {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            -moz-backface-visibility: hidden;
+            backface-visibility: hidden;
+            -webkit-transition: transform 0.4s ease-out, opacity 0.3s ease-out;
+            -moz-transition: transform 0.4s ease-out, opacity 0.3s ease-out;
+            transition: transform 0.4s ease-out, opacity 0.3s ease-out;
+        }
+        .gallery .front-side {
+            opacity: 1;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            -webkit-transform: rotateY(0deg);
+            -moz-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+            filter: grayscale(100%);
+        }
+        .gallery .back-side {
+            opacity: 0;
+            -webkit-transform: rotateY(-180deg);
+            -moz-transform: rotateY(-180deg);
+            transform: rotateY(-180deg);
+        }
+        .gallery .back-side>a {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+        .gallery li:nth-child(1) .front-side {
+            background-image: url('https://img-4.linternaute.com/cv2k3btDzZhtnviFc3M3asFIr2Y=/1240x/smart/7244e5210e52400fa046c092d12d307f/ccmcms-linternaute/11468236.jpg');
+        }
+        .gallery li:nth-child(1) .loader {
+            border-top-color: #F39C12;
+            border-left-color: #F39C12;
+        }
+        .gallery li:nth-child(1) .text h3 {
+            color: #F39C12;
+        }
+        .gallery li:nth-child(1) .text h3:after {
+            background: #F5B041;
+        }
+        .gallery li:nth-child(2) .front-side {
+            background-image: url('https://blog.eurail.com/wp-content/uploads/2017/09/Haunted-places-in-Europe-Chateau-Miranda-in-Belgium.jpg');
+        }
+        .gallery li:nth-child(3) .front-side {
+            background-image: url('https://voyages.michelin.fr/sites/default/files/styles/poi_slideshow_big/public/images/travel_guide/NX-24474.jpg?itok=34Dqyf3v');
+        }
+        .gallery li:nth-child(3) .loader {
+            border-top-color: #424949;
+            border-left-color: #424949;
+        }
+        .gallery li:nth-child(3) .text h3 {
+            color: #424949;
+        }
+        .gallery li:nth-child(3) .text h3:after {
+            background: #515A5A;
+        }
+        .gallery li:nth-child(4) .front-side {
+            background-image: url('https://blog.eurail.com/wp-content/uploads/2017/09/Haunted-places-in-Europe-Chateau-Miranda-in-Belgium.jpg');
+        }
+        .gallery li:nth-child(4) .loader {
+            border-top-color: #F1C40F;
+            border-left-color: #F1C40F;
+        }
+        .gallery li:nth-child(4) .text h3 {
+            color: #F1C40F;
+        }
+        .gallery li:nth-child(4) .text h3:after {
+            background: #F7DC6F;
+        }
+        .gallery li:nth-child(5) .front-side {
+            background-image: url('');
+        }
+        .gallery li:nth-child(5) .loader {
+            border-top-color: #1ABC9C;
+            border-left-color: #1ABC9C;
+        }
+        .gallery li:nth-child(5) .text h3 {
+            color: #1ABC9C;
+        }
+        .gallery li:nth-child(5) .text h3:after {
+            background: #48C9B0;
+        }
+        .gallery li:nth-child(6) .front-side {
+            background-image: url('https://file.aperion.it/slir/w800-h600/caf/7/6/761326963752.jpg');
+        }
+        .gallery li:nth-child(6) .loader {
+            border-top-color: #E74C3C;
+            border-left-color: #E74C3C;
+        }
+        .gallery li:nth-child(6) .text h3 {
+            color: #E74C3C;
+        }
+        .gallery li:nth-child(6) .text h3:after {
+            background: #EC7063;
+        }
+        .gallery li:nth-child(7) .front-side {
+            background-image: url('https://blog.eurail.com/wp-content/uploads/2017/09/Haunted-places-in-Europe-Chateau-Miranda-in-Belgium.jpg');
+        }
+        .gallery li:nth-child(7) .loader {
+            border-top-color: #8E44AD;
+            border-left-color: #8E44AD;
+        }
+        .gallery li:nth-child(7) .text h3 {
+            color: #8E44AD;
+        }
+        .gallery li:nth-child(7) .text h3:after {
+            background: #A569BD;
+        }
+        .gallery li:nth-child(8) .front-side {
+            background-image: url('http://pre06.deviantart.net/73a2/th/pre/i/2014/080/5/7/lina_by_haryarti-d7b48eu.jpg');
+        }
+        .gallery li:nth-child(8) .loader {
+            border-top-color: #F39C12;
+            border-left-color: #F39C12;
+        }
+        .gallery li:nth-child(8) .text h3 {
+            color: #F39C12;
+        }
+        .gallery li:nth-child(8) .text h3:after {
+            background: #F5B041;
+        }
+        .gallery .content {
+            text-align: center;
+            position: relative;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            transform: translateY(-50%);
+            padding: 25px 20px;
+        }
+        .gallery li:hover .text {
+            opacity: 1;
+            visibility: visible;
+            max-height: 2000px;
+            -webkit-transition: opacity .3s ease-in 1.5s, max-height .1s ease 1.5s;
+            -moz-transition: opacity .3s ease-in 1.5s, max-height .1s ease 1.5s;
+            transition: opacity .3s ease-in 1.5s, max-height .1s ease 1.5s;
+        }
+        .gallery li:hover .loader {
+            opacity: 1;
+            visibility: visible;
+            -webkit-animation: hide .1s ease-in-out 1.4s forwards, load .75s infinite;
+            -moz-animation: hide .1s ease-in-out 1.4s forwards, load .75s infinite;
+            animation: hide .1s ease-in-out 1.4s forwards, load .75s infinite;
+        }
+        .gallery .text {
+            opacity: 0;
+            visibility: hidden;
+            max-height: 0;
+        }
+        .gallery .content h3 {
+            position: relative;
+            color: #3498DB;
+            font: normal 30px/1.25 'Open Sans';
+            margin-bottom: 25px;
+        }
+        .gallery .content h3:after {
+            content: '';
+            position: absolute;
+            width: 50px;
+            height: 3px;
+            bottom: -10px;
+            left: 50%;
+            margin-left: -25px;
+            background: #85C1E9;
+        }
+        .gallery .content p {
+            margin: 10px 0;
+            color: #D6DBDF;
+            font: normal 16px/1.25 'Open Sans';
+        }
+        .gallery .loader {
+            opacity: 0;
+            visibility: hidden;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            margin: auto;
+            border: 4px solid transparent;
+            border-top-color: #3498DB;
+            border-left-color: #3498DB;
+        }
+        <<<<<<< HEAD=======>>>>>>>5f2b03f298f6f4bcdee17e8c6eef236ed1141614
+        /*--------------------------------------- personnages -------------------------------------------------------*/
+        .pictures-perso {
+            display: flex;
+            flex-direction: row;
+            margin-top: 150px;
+            justify-content: center;
+            justify-content: space-around;
+            margin-bottom: 10%;
+        }
+        .witch {
+            display: flex;
+            height: 320px;
+            width: 400px;
+            border-radius: 10px;
+        }
+        .plush {
+            display: flex;
+            height: 370px;
+            width: 250px;
+            border-radius: 10px;
+        }
+        .clown {
+            display: flex;
+            height: 320px;
+            width: 400px;
+            border-radius: 10px;
+        }
+        <<<<<<< HEAD
+        /* --------------------- Grid ---------------------------------*/
+        * {
+            box-sizing: border-box;
+        }
+        h1 {
+            font-family: 'Creepster';
+            padding: 2vmin;
+            text-align: left;
+            font-size: 10vmin;
+            color: #000;
+            text-shadow: 0 0 3px rgba(0, 0, 0, .3);
+            margin: 10px 0;
+        }
+        .masonry {
+            padding: 2vmin;
+            min-width: 320px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .masonry>* {
+            flex: 1 1 250px;
+            margin: 1vmin;
+            max-height: 30vmin;
+            display: flex;
+            overflow: hidden;
+            align-items: center;
+            justify-content: center;
+        }
+        .masonry :nth-child(3n+3) {
+            flex-grow: 4;
+        }
+        @media screen and (min-width: 640px) {
+            .masonry :nth-child(3n+5) {
+                flex-grow: 2;
+                flex-basis: 20%;
+            }
+            .masonry :nth-child(3n+4) {
+                flex-grow: 2;
+                flex-basis: 350px;
+            }
+            .masonry :nth-last-child(1),
+            .masonry :nth-last-child(2) {
+                flex-basis: 40%;
+            }
+        }
+        @supports (display: grid) and (object-fit: cover) {
+            .masonry {
+                display: grid;
+                grid-auto-flow: dense;
+                grid-template-columns: repeat(auto-fit, minmax(calc(5rem + 10vmax), max-content));
+                grid-gap: 1vmin;
+            }
+            .masonry>* {
+                display: initial;
+                flex: 1 1 300px;
+                margin: initial;
+                max-height: initial;
+            }
+            .masonry img {
+                width: 100%;
+                height: 100%;
+                display: block;
+                object-fit: cover;
+            }
+            .masonry :nth-child(2n+2) {
+                grid-row-end: span 1;
+            }
+            @media screen and (min-width: 640px) {
+                .masonry :first-child {
+                    grid-row-start: span 3;
+                    grid-column-start: span 3;
+                }
+                .masonry :nth-child(2n+3) {
+                    grid-row-start: span 3;
+                }
+                .masonry :nth-child(6n+3) {
+                    grid-row-start: span 2;
+                }
+            }
+            @media screen and (min-width: 960px) {
+                .masonry :first-child {
+                    grid-row-start: span 2;
+                    grid-column-start: span 2;
+                }
+                .masonry :nth-child(8n+9) {
+                    grid-column-start: span 1;
+                    grid-row-start: span 3;
+                }
+                .masonry :nth-child(2n+3) {
+                    grid-row-start: span 2;
+                }
+            }
+            =======/* --------------------- Grid ---------------------------------*/
+            * {
+                box-sizing: border-box;
+            }
+            h1 {
+                font-family: 'Creepster';
+                padding: 2vmin;
+                text-align: left;
+                font-size: 10vmin;
+                color: #000;
+                text-shadow: 0 0 3px rgba(0, 0, 0, .3);
+                margin: 10px 0;
+            }
+            .masonry {
+                padding: 2vmin;
+                min-width: 320px;
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .masonry>* {
+                flex: 1 1 250px;
+                margin: 1vmin;
+                max-height: 30vmin;
+                display: flex;
+                overflow: hidden;
+                align-items: center;
+                justify-content: center;
+            }
+            .masonry :nth-child(3n+3) {
+                flex-grow: 4;
+            }
+            @media screen and (min-width: 640px) {
+                .masonry :nth-child(3n+5) {
+                    flex-grow: 2;
+                    flex-basis: 20%;
+                }
+                .masonry :nth-child(3n+4) {
+                    flex-grow: 2;
+                    flex-basis: 350px;
+                }
+                .masonry :nth-last-child(1),
+                .masonry :nth-last-child(2) {
+                    flex-basis: 40%;
+                }
+            }
+            @supports (display: grid) and (object-fit: cover) {
+                .masonry {
+                    display: grid;
+                    grid-auto-flow: dense;
+                    grid-template-columns: repeat(auto-fit, minmax(calc(5rem + 10vmax), max-content));
+                    grid-gap: 1vmin;
+                }
+                .masonry>* {
+                    display: initial;
+                    flex: 1 1 300px;
+                    margin: initial;
+                    max-height: initial;
+                }
+                .masonry img {
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+                    object-fit: cover;
+                }
+                .masonry :nth-child(2n+2) {
+                    grid-row-end: span 1;
+                }
+                @media screen and (min-width: 640px) {
+                    .masonry :first-child {
+                        grid-row-start: span 3;
+                        grid-column-start: span 3;
+                    }
+                    .masonry :nth-child(2n+3) {
+                        grid-row-start: span 3;
+                    }
+                    .masonry :nth-child(6n+3) {
+                        grid-row-start: span 2;
+                    }
+                }
+                @media screen and (min-width: 960px) {
+                    .masonry :first-child {
+                        grid-row-start: span 2;
+                        grid-column-start: span 2;
+                    }
+                    .masonry :nth-child(8n+9) {
+                        grid-column-start: span 1;
+                        grid-row-start: span 3;
+                    }
+                    .masonry :nth-child(2n+3) {
+                        grid-row-start: span 2;
+                    }
+                }
+                >>>>>>>5f2b03f298f6f4bcdee17e8c6eef236ed1141614
+            }
+            /* some effects */
+            <<<<<<< HEAD .masonry>* {
+                filter: saturate(0);
+                transition: 5s filter 1s;
+            }
+            .masonry> :hover {
+                filter: saturate(1);
+                transition: filter .25s;
+                =======.masonry>* {
+                    filter: saturate(0);
+                    transition: 5s filter 1s;
+                }
+                .masonry> :hover {
+                    filter: saturate(1);
+                    transition: filter .25s;
+                    >>>>>>>5f2b03f298f6f4bcdee17e8c6eef236ed1141614
+                }
+                .pfin {
+                    text-align: center;
+                    margin-top: 80px;
+                    font-size: 100px;
+                    font-family: 'danger';
+                }
+                <<<<<<< HEAD .pfin:hover {
+                    color: #E3B23C;
+                }
+                =======.pfin:hover {
+                    color: #E3B23C;
+                }
+                >>>>>>>5f2b03f298f6f4bcdee17e8c6eef236ed1141614
+                /* ------------------------- footer -------------------------- */
+                footer {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    width: 100%;
+                    height: 100px;
+                    margin-top: 10%;
+                    border-top: 2px whitesmoke inset;
+                }
+                .sheep-logo {
+                    height: 80px;
+                    width: 80px;
+                    border-radius: 10px;
+                    box-shadow: 3px 3px 1px black;
+                    display: flex;
+                    justify-content: left;
+                    margin: 8px 0px 0px 8px;
+                }
+                .top {
+                    font-size: 45px;
+                    color: rgb(255, 255, 255);
+                    display: flex;
+                    margin-left: 18%;
+                    margin-top: 20px;
+                    margin-bottom: 35px;
+                    font-weight: bold;
+                    border-radius: 10px;
+                    text-decoration: none;
+                }
+                .copyright {
+                    display: flex;
+                    justify-content: right;
+                    margin: 37px 5px 0px 0px;
+                    font-size: 17px;
+                    color: white;
+                }
+                <<<<<<< HEAD=======>>>>>>>5f2b03f298f6f4bcdee17e8c6eef236ed1141614
+                /* ----------------------- media Queries -------------------------*/
+                @-webkit-keyframes load {
+                    0% {
+                        -webkit-transform: rotate(0deg);
+                    }
+                    100% {
+                        -webkit-transform: rotate(360deg);
+                    }
+                }
+                @-moz-keyframes load {
+                    0% {
+                        -moz-transform: rotate(0deg);
+                    }
+                    100% {
+                        -moz-transform: rotate(360deg);
+                    }
+                }
+                @keyframes load {
+                    0% {
+                        transform: rotate(0deg);
+                    }
+                    100% {
+                        transform: rotate(360deg);
+                    }
+                }
+                @-webkit-keyframes hide {
+                    100% {
+                        visibility: hidden;
+                        opacity: 0;
+                    }
+                }
+                @-moz-keyframes hide {
+                    100% {
+                        visibility: hidden;
+                        opacity: 0;
+                    }
+                }
+                @keyframes hide {
+                    100% {
+                        visibility: hidden;
+                        opacity: 0;
+                    }
+                }
+                <<<<<<< HEAD=======>>>>>>>5f2b03f298f6f4bcdee17e8c6eef236ed1141614 @media (max-width: 480px) {
+                    .arrow,
+                    .light .arrow {
+                        background-size: 10px;
+                        background-position: 10px 50%;
+                    }
+                }
+                @media (max-width: 1024px) {
+                    .pictures-perso {
+                        flex-direction: column;
+                        justify-content: space-around;
+                        align-items: center;
+                    }
+                    .witch {
+                        height: 260px;
+                        width: 350px;
+                        margin-bottom: 40px;
+                    }
+                    <<<<<<< HEAD=======>>>>>>>5f2b03f298f6f4bcdee17e8c6eef236ed1141614 .plush {
+                        height: 250px;
+                        width: 210px;
+                        margin-bottom: 40px;
+                    }
+                    <<<<<<< HEAD .clown {
+                        height: 260px;
+                        width: 350px;
+                    }
+                    .copyright {
+                        =======.clown {
+                            height: 260px;
+                            width: 350px;
+                        }
+                        .copyright {
+                            >>>>>>>5f2b03f298f6f4bcdee17e8c6eef236ed1141614 margin-left: 30%;
+                            margin-top: 1%;
+                            text-align: right;
+                        }
+                        <<<<<<< HEAD .top {
+                            margin-left: 32%;
+                        }
+                        nav ul {
+                            justify-content: space-between;
+                        }
+                        nav ul li {
+                            font-size: 18px;
+                        }
+                        .title {
+                            margin-top: 20%;
+                        }
+                        =======.top {
+                            margin-left: 32%;
+                        }
+                        nav ul {
+                            justify-content: space-between;
+                        }
+                        nav ul li {
+                            font-size: 18px;
+                        }
+                        .title {
+                            margin-top: 20%;
+                        }
+                        >>>>>>>5f2b03f298f6f4bcdee17e8c6eef236ed1141614
+                    }
